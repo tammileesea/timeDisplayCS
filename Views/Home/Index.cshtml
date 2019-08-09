@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Current Time and Date</title>
+</head>
+<body>
+    <h1>The current day, time, and/or date is:</h1>
+    <div>
+        @{
+            DateTime CurrentTime = DateTime.Now;
+            string format1 = "D";
+            string format2 = "f";
+            string format3 = "MMM d yyy, hh:mm tt";
+            string format4 = "d";
+            string format5 = "g";
+            <hr>
+            <h2>@CurrentTime.ToString(format1)</h2>
+            <hr>
+            <h2>@CurrentTime.ToString(format2)</h2>
+            <hr>
+            <h2>@CurrentTime.ToString(format3)</h2>
+            <hr>
+            <h2>@CurrentTime.ToString(format4)</h2>
+            <hr>
+            <h2>@CurrentTime.ToString(format5)</h2>
+
+        }
+    </div>
+</body>
+</html>
